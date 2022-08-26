@@ -32,8 +32,13 @@ nav {
   padding: 27px;
   margin: 10px;
 }
-.nav-items {
-  display: grid;
+.nav-items{
+  display: none;
+  padding-left: 4px;
+}
+@media only screen and (min-width: 1050px) {
+  #navbar{
+    display: grid;
   grid-template-columns: auto auto auto auto;
   grid-column-gap: 58px;
   font-family: "Poppins";
@@ -41,7 +46,9 @@ nav {
   padding-left: 127px;
   font-size: 28px;
   align-items: center;
+  }
 }
+
 .nav-item.active-item {
   color: rgba(254, 94, 53, 255);
 }
@@ -49,6 +56,15 @@ nav {
 /* MAIN AREA */
 .intro-section {
   display: flex;
+}
+@media only screen and (max-width:1370px) {
+  #intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 10px;
+  }
+  
 }
 .left-section {
   padding: 36px;
@@ -63,6 +79,32 @@ nav {
   height: 40px;
   position: relative;
   top: 3px;
+}
+@media only screen and (max-width:916px) {
+  #intro{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  #leftSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  #leftSectionH1{
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  }
+  #paragraph{
+    text-align: center;
+    width:400px
+  }
+  #plus1{
+    position: relative;
+    right:70px;
+  }
 }
 .left-section h1 {
   font-family: "Fredoka One";
@@ -96,6 +138,17 @@ nav {
 .action-btns {
   padding-top: 35px;
 }
+@media only screen and (max-width:916px) {
+  #actionBtns{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  #actionBtn2{
+    position: relative;
+    left: 0px;
+  }
+}
 .action-btn {
   width: 175px;
   height: 45px;
@@ -123,14 +176,29 @@ flex-direction: column;
   height: 659px;
 
 }
-.headphone-div img:last-child{
+@media only screen and (max-width:576px){
+  #head{
+    width: 400px;
+  }
+  #rightSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #action{
+    align-self: flex-start;
+    margin-right: 300px;
+  }
+}
+
+.headphone{
   /* position: relative;
   right: 50px;
   bottom: 18px; */
   width: 483px;
 
 }
-
+/* -div img:last-child */
 .discount{
   position: relative;
   bottom: 265px;
